@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CustomBannerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CustomBannerApplication.class, args);
+		final SpringApplication application = new SpringApplication(CustomBannerApplication.class);
+		application.setBanner(new CustomBanner());
+		application.run(args);
+//		SpringApplication.run(CustomBannerApplication.class, args);
 	}
 
 }

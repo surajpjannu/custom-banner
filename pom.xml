@@ -11,7 +11,7 @@
 	<groupId>com.jannu.springboot</groupId>
 	<artifactId>custom-banner</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>custom-banner</name>
+	<name>Banner</name>
 	<description>CustomBanner for Spring boot services</description>
 
 	<properties>

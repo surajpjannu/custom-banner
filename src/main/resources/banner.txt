@@ -3,3 +3,10 @@
 |  |.'.|  | | .-. : |  | | .--' | .-. | |        | | .-. : 
 |   ,'.   | \   --. |  | \ `--. ' '-' ' |  |  |  | \   --. 
 '--'   '--'  `----' `--'  `---'  `---'  `--`--`--'  `----'
+===================================================================================
+Application Title                               :: ${application.title}
+Application Version                             :: ${application.version}
+Formatted Application Version                   :: ${application.formatted-version}
+Spring Boot starter parent version              :: ${spring-boot.version}
+Formatted Spring Boot starter parent version    :: ${spring-boot.formatted-version}
+===================================================================================

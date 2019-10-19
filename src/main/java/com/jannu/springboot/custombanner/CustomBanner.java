@@ -1,29 +1,5 @@
-# custom-banner
-Custom Banner for Springboot service
+package com.jannu.springboot.custombanner;
 
-Visit https://devops.datenkollektiv.de/banner.txt/index.html
-Give the Banner text an select the font.
-copy the output banner text and paste it in src/main/resources/banner.txt file.
-
-# OR
-
-Use this code to create custom banner
-
-```aidl
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class CustomBannerApplication {
-	public static void main(String[] args) {
-		final SpringApplication application = new SpringApplication(CustomBannerApplication.class);
-		application.setBanner(new CustomBanner());
-		application.run(args);
-    }
-}
-```
-
-```aidl
 import org.springframework.boot.Banner;
 import org.springframework.core.env.Environment;
 
@@ -45,8 +21,8 @@ public class CustomBanner implements Banner {
         final Font sansSerif = new Font("SansSerif", Font.BOLD, 24);
         final char character = '=';
         final String banner = printCustomBanner(applicationTitle, sansSerif, width, height, character);
-        
-        
+
+
         out.println(banner);
         out.println("================================");
         out.println("Application Title   : " + applicationTitle);
@@ -80,8 +56,3 @@ public class CustomBanner implements Banner {
     }
 
 }
-
-```
-
-# Note 
-banner.txt have higher precedence over custom java code.
